@@ -3,6 +3,7 @@ import "./style2.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import AllJokes from "./AllJokes";
+import Xkcd from "./Xkcd";
 import AllScrape from "./AllScrape";
 import Login from "./Login";
 import { Switch, Route, NavLink, useHistory } from "react-router-dom";
@@ -26,13 +27,13 @@ const Header = ({ isLoggedIn, loginMsg, isAdmin, loginName }) => {
             </NavLink>
           )}
           {isAdmin && (
-            <>
-              <li>
+            
+              
                 <NavLink className="nav-link" activeClassName="selected" to="/admin">
                   Admin
-            </NavLink>
-              </li>
-            </>
+                </NavLink>
+              
+            
           )}
           <NavLink className="nav-link" activeClassName="selected" to="/login-out">
             {loginMsg}
@@ -136,7 +137,7 @@ function Scrape() {
 function Admin() {
   return (
     <div className="pageContent">
-      <h2>Admin</h2>
+      <Xkcd />
     </div>
   );
 }

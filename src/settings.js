@@ -1,4 +1,6 @@
-export const URL = "http://localhost:8080/CA3_Boilerplate";
-export const URLJokes = "http://localhost:8080/CA3_Boilerplate/api/jokes";
-export const URLScrapeSequential = "http://localhost:8080/CA3_Boilerplate/api/scrape/sequential";
-export const URLScrapeParallel = "http://localhost:8080/CA3_Boilerplate/api/scrape/parallel";
+export const URL = "https://amazingh0rse.dk/CA3_Boilerplate_Backend/";
+export const URLJokes = "https://amazingh0rse.dk/CA3_Boilerplate_Backend/api/jokes";
+export const URLScrapeSequential = "https://amazingh0rse.dk/CA3_Boilerplate_Backend/api/scrape/sequential";
+export const URLScrapeParallel = "https://amazingh0rse.dk/CA3_Boilerplate_Backend/api/scrape/parallel";
+export const URLXkcdDaily = "https://amazingh0rse.dk/CA3_Boilerplate_Backend/api/xkcd/daily"
+export const URLXkcdId = "https://amazingh0rse.dk/CA3_Boilerplate_Backend/api/xkcd/"

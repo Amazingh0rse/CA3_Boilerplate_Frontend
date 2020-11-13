@@ -71,3 +71,7 @@ ul.header li span {
   padding: 14px 16px;
   text-decoration: none;
 }
+
+.inline {
+  display: inline;
+}
