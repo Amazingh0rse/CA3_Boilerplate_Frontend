@@ -42,26 +42,30 @@ const Xkcd = () => {
   };
 
   return (
-    <div>
-      <h2 className="inline">XKCD Comic</h2> #{comic.num}
-      <p>
-        {comic.day}/{comic.month}/ {comic.year}
-        <br />
-        <b>{comic.title}</b>
-      </p>
-      <img src={comic.img} alt={comic.alt} title={comic.alt} />;
-      <Form onChange={onChange} className="mt-4" Label="">
-        <Form.Label>please enter a number between 0 and 2384:</Form.Label>
-        <Form.Control type="text" id="ComicNum" placeholder="" />
+    <Container>
+      <Row>
+        <div>
+          <h2 className="inline">XKCD Comic</h2> #{comic.num}
+          <p>
+            {comic.day}/{comic.month}/ {comic.year}
+            <br />
+            <b>{comic.title}</b>
+          </p>
+          <img src={comic.img} alt={comic.alt} title={comic.alt} />
+          <Form onChange={onChange} className="mt-4" Label="">
+            <Form.Label>please enter a number between 0 and 2384:</Form.Label>
+            <Form.Control type="text" id="ComicNum" placeholder="" />
 
-        <Button onClick={getComic} variant="primary" type="submit">
-          Get Comic
-        </Button>
-        <Button onClick={fetchNewDaily} variant="primary" type="submit">
-          Get Newest Comic
-        </Button>
-      </Form>
-    </div>
+            <Button onClick={getComic} variant="primary" type="submit">
+              Get Comic
+            </Button>
+            <Button onClick={fetchNewDaily} variant="primary" type="submit">
+              Get Newest Comic
+            </Button>
+          </Form>
+        </div>
+      </Row>
+    </Container>
   );
 };
 
