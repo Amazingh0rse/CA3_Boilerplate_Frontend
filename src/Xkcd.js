@@ -53,7 +53,7 @@ const Xkcd = () => {
           </p>
           <img src={comic.img} alt={comic.alt} title={comic.alt} />
           <Form onChange={onChange} className="mt-4" Label="">
-            <Form.Label>please enter a number between 0 and 2384:</Form.Label>
+            <Form.Label>please enter a number between 1 and 2384:</Form.Label>
             <Form.Control type="text" id="ComicNum" placeholder="" />
 
             <Button onClick={getComic} variant="primary" type="submit">

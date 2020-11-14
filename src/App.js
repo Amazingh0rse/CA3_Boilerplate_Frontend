@@ -6,6 +6,7 @@ import AllJokes from "./AllJokes";
 import Xkcd from "./Xkcd";
 import AllScrape from "./AllScrape";
 import Login from "./Login";
+import Reflection from "./Reflection"
 import { Switch, Route, NavLink, useHistory } from "react-router-dom";
 
 const Header = ({ isLoggedIn, loginMsg, isAdmin, loginName }) => {
@@ -113,7 +114,7 @@ export default function App() {
 function Home() {
   return (
     <div className="pageContent">
-      <h2>Home</h2>
+      <Reflection />
     </div>
   );
 }
